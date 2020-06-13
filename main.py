@@ -81,7 +81,7 @@ def generate():
     playlists[list] = Playlist("https://www.youtube.com/playlist?list="+list)
     playlists[list].update()
     playlist_url = playlists[list].gen_rss()
-    return jsonify({'url': "http://127.0.0.1:5000"+playlist_url})
+    return jsonify({'url': "https://youtuberss-maker.herokuapp.com"+playlist_url})
 
 
 
